@@ -15,4 +15,5 @@ export interface Style {
 	paddingHorizontal?: number | string;
 	paddingVertical?: number | string;
 	backgroundColor?: string;
+	flexDirection?: string;
 }

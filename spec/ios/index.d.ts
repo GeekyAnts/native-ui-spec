@@ -6,6 +6,7 @@ import { StatusBar as StatusBarType } from "../../types/CommonSpec/StatusBar";
 import { Text as TextType } from "../../types/CommonSpec/Text";
 import { Icon as IconType } from "../../types/CommonSpec/Icon";
 import { Button as ButtonType } from "../../types/CommonSpec/Button";
+import { Badge as BadgeType } from "../../types/CommonSpec/Badge";
 export declare class IOSSpec implements IIOSSpec {
     Layout: Content;
     TabBar: Footer;
@@ -14,5 +15,6 @@ export declare class IOSSpec implements IIOSSpec {
     Text: TextType;
     Icon: IconType;
     Button: ButtonType;
+    Badge: BadgeType;
     constructor();
 }

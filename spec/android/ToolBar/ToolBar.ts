@@ -6,6 +6,7 @@ export class ToolBar implements IHeader {
 			height: 55,
 			marginHorizontal: 10,
 			backgroundColor: "blue",
+			flexDirection: "row",
 		};
 	}
 }

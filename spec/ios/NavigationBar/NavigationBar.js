@@ -6,6 +6,13 @@ var NavigationBar = /** @class */ (function () {
             height: 44,
             paddingHorizontal: 8,
             backgroundColor: "#EEE",
+            flexDirection: "row",
+        };
+        this.Text = {
+            style: {
+                color: "#007AFF",
+                fontSize: 17,
+            },
         };
     }
     return NavigationBar;

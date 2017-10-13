@@ -3,8 +3,8 @@ export class Content implements IContent {
 	style: Object;
 	constructor() {
 		this.style = {
-			height: 20,
-			marginHorizontal: 10,
+			flex: 1,
+			backgroundColor: "transparent",
 		};
 	}
 }

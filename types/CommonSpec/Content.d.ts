@@ -3,6 +3,7 @@ export interface Content {
 }
 
 export interface Style {
+	flex?: number;
 	marginHorizontal?: number | string;
 	backgroundColor?: string;
 }
