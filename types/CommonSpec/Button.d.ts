@@ -33,6 +33,120 @@ export interface Variations {
 	dark?: ButtonBGVariations;
 	light?: ButtonBGVariations;
 	warning?: ButtonBGVariations;
+	disabled?: ButtonBGVariations;
+	transparent?: TransparentButton;
+}
+
+export interface TransparentButton {
+	style?: {
+		backgroundColor?: string;
+	};
+	Icon?: {
+		style?: {
+			color?: string;
+		};
+	};
+	Text?: {
+		style?: {
+			color?: string;
+		};
+	};
+	primary?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	info?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	success?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	warning?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	danger?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	light?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	dark?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
+	disabled?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+	};
 }
 
 export interface ButtonBGVariations {
@@ -45,22 +159,150 @@ export interface ButtonHeightVariations {
 	style?: {
 		height?: number;
 	};
+	Text?: {
+		style?: {
+			fontSize?: number;
+		};
+	};
+	Icon?: {
+		style?: {
+			fontSize?: number;
+		};
+	};
 }
 
-export interface BorderButton {
+export interface BorderButton extends TransparentButton {
 	style?: {
 		borderWidth?: number;
 		backgroundColor?: string;
 		borderColor?: string;
 	};
-	Text?: {
+	primary?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
 		style?: {
-			color?: string;
+			borderWidth?: number;
+			borderColor?: string;
 		};
 	};
-	Icon?: {
+	info?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
 		style?: {
-			color?: string;
+			borderWidth?: number;
+			borderColor?: string;
+		};
+	};
+	success?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+		style?: {
+			borderWidth?: number;
+			borderColor?: string;
+		};
+	};
+	warning?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+		style?: {
+			borderWidth?: number;
+			borderColor?: string;
+		};
+	};
+	danger?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+		style?: {
+			borderWidth?: number;
+			borderColor?: string;
+		};
+	};
+	light?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+		style?: {
+			borderWidth?: number;
+			borderColor?: string;
+		};
+	};
+	dark?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+		style?: {
+			borderWidth?: number;
+			borderColor?: string;
+		};
+	};
+	disabled?: {
+		Icon?: {
+			style?: {
+				color?: string;
+			};
+		};
+		Text?: {
+			style?: {
+				color?: string;
+			};
+		};
+		style?: {
+			borderWidth?: number;
+			borderColor?: string;
 		};
 	};
 }
@@ -90,6 +332,7 @@ export interface Icon {
 	style?: {
 		color?: string;
 		fontSize?: number;
-		marginHorizontal?: number;
+		paddingRight?: number;
+		paddingLeft?: number;
 	};
 }

@@ -1,7 +1,8 @@
-import { Header } from "../../../types/commonSpec/Header";
-import { Text } from "../../../types/commonSpec/Text";
+import { Header, Leading, Trailing, Title } from "../../../types/commonSpec/Header";
 export declare class NavigationBar implements Header {
     style: Object;
-    Text: Text;
+    title: Title;
+    leading: Leading;
+    trailing: Trailing;
     constructor();
 }

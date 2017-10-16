@@ -1,24 +1,32 @@
+type FlexAlignType = "flex-start" | "flex-end" | "center" | "stretch" | "baseline";
+
 import { Text } from "./Text";
-import { Icon } from "./Icon";
 export interface Footer {
 	style?: Style;
 	Button?: Button;
-	Text?: Text;
-	Icon?: Icon;
 }
 
 export interface Style {
-	marginHorizontal?: number | string;
 	backgroundColor?: string;
-	flexDirection?: string;
-	justifyContent?: string;
+	flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
+	alignItems?: FlexAlignType;
 	height?: number;
-	// elevation?: number; // for android
 }
 
 export interface Button {
 	style?: {
-		alignSelf?: string;
+		flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
 		flex?: number;
+		alignItems?: FlexAlignType;
+		height?: number;
+		backgroundColor?: string;
+	};
+	Text?: Text;
+	Icon?: {
+		style?: {
+			fontSize?: number;
+			color?: string;
+			height?: number;
+		};
 	};
 }
