@@ -1,12 +1,12 @@
-import { ToolBar as IToolBar, Leading, Trailing, Title } from "../../../types/AndroidSpec/ToolBar";
-export class ToolBar implements IToolBar {
+import { ListItem as IListItem, Leading, Trailing, Title } from "../../../types/AndroidSpec/ListItem";
+export class ListItem implements IListItem {
 	style: Object;
 	title: Title;
 	leading: Leading;
 	trailing: Trailing;
 	constructor() {
 		this.style = {
-			height: 56,
+			height: 72,
 			paddingHorizontal: 6,
 			backgroundColor: "#3F51B5",
 			flexDirection: "row",

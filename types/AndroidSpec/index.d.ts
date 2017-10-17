@@ -5,6 +5,7 @@ import { BottomBar } from "./BottomBar.d";
 import { Text } from "./Text.d";
 import { Icon } from "./Icon.d";
 import { Button } from "./Button.d";
+import { ListItem } from "./ListItem.d";
 export interface AndroidSpec {
 	StatusBar: StatusBar;
 	Content: Content;
@@ -13,4 +14,5 @@ export interface AndroidSpec {
 	Text?: Text;
 	Icon?: Icon;
 	Button?: Button;
+	ListItem?: ListItem;
 }

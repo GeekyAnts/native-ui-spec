@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ToolBar = /** @class */ (function () {
-    function ToolBar() {
+var ListItem = /** @class */ (function () {
+    function ListItem() {
         this.style = {
-            height: 56,
+            height: 72,
             paddingHorizontal: 6,
             backgroundColor: "#3F51B5",
             flexDirection: "row",
@@ -61,6 +61,6 @@ var ToolBar = /** @class */ (function () {
             },
         };
     }
-    return ToolBar;
+    return ListItem;
 }());
-exports.ToolBar = ToolBar;
+exports.ListItem = ListItem;

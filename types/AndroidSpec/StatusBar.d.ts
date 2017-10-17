@@ -1,4 +1,8 @@
-import { StatusBar } from "../CommonSpec/StatusBar";
-export interface StatusBar extends StatusBar {
+export interface StatusBar {
 	backgroundColor?: string;
+	style?: Style;
+}
+export interface Style {
+	height?: number;
+	marginHorizontal?: number | string;
 }

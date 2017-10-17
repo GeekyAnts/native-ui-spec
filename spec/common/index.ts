@@ -3,10 +3,9 @@ import { Platform } from "react-native";
 import { Content } from "../android/Content/Content";
 import { ToolBar } from "../android/ToolBar/ToolBar";
 import { BottomBar } from "../android/BottomBar/BottomBar";
-import { StatusBar as AStatusBar } from "../android/StatusBar/StatusBar";
+// import { StatusBar as AStatusBar } from "../android/StatusBar/StatusBar";
 import { Text as AText } from "../android/Text/Text";
 import { Icon as AIcon } from "../android/Icon/Icon";
-import { Button as AButton } from "../android/Button/Button";
 import { Badge as ABadge } from "../android/Badge/Badge";
 
 import { NavigationBar } from "../ios/NavigationBar/NavigationBar";
@@ -50,11 +49,9 @@ export class CommonSpec implements ICommonSpec {
 		} else if (Platform.OS === "android") {
 			this.Content = new Content();
 			this.Footer = new BottomBar();
-			this.Header = new ToolBar();
-			this.StatusBar = new AStatusBar();
+			// this.StatusBar = new AStatusBar();
 			this.Text = new AText();
 			this.Icon = new AIcon();
-			this.Button = new AButton();
 			this.Badge = new ABadge();
 		}
 	};

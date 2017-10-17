@@ -1,7 +1,7 @@
 type FlexAlignType = "flex-start" | "flex-end" | "center" | "stretch" | "baseline";
 
 import { Text } from "./Text";
-export interface ToolBar {
+export interface ListItem {
 	style?: Style;
 	leading?: Leading;
 	title?: Title;

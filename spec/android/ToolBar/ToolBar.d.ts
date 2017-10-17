@@ -1,5 +1,8 @@
-import { Header as IHeader } from "../../../types/commonSpec/Header";
-export declare class ToolBar implements IHeader {
+import { ToolBar as IToolBar, Leading, Trailing, Title } from "../../../types/AndroidSpec/ToolBar";
+export declare class ToolBar implements IToolBar {
     style: Object;
+    title: Title;
+    leading: Leading;
+    trailing: Trailing;
     constructor();
 }

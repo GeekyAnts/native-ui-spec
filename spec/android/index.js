@@ -8,6 +8,7 @@ var Text_1 = require("./Text/Text");
 var Icon_1 = require("./Icon/Icon");
 var Button_1 = require("./Button/Button");
 var Badge_1 = require("./Badge/Badge");
+var ListItem_1 = require("./ListItem/ListItem");
 var AndroidSpec = /** @class */ (function () {
     function AndroidSpec() {
         this.Content = new Content_1.Content();
@@ -18,6 +19,7 @@ var AndroidSpec = /** @class */ (function () {
         this.Icon = new Icon_1.Icon();
         this.Button = new Button_1.Button();
         this.Badge = new Badge_1.Badge();
+        this.ListItem = new ListItem_1.ListItem();
     }
     return AndroidSpec;
 }());
