@@ -4,7 +4,7 @@ export class TabBar implements ITabBar {
 	Button: IButton;
 	constructor() {
 		this.style = {
-			backgroundColor: "#EFEFF4",
+			backgroundColor: "#F8F8F8",
 			flexDirection: "row",
 			alignItems: "center",
 			height: 49,

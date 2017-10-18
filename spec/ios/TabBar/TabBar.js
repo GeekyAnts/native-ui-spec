@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var TabBar = /** @class */ (function () {
     function TabBar() {
         this.style = {
-            backgroundColor: "#EFEFF4",
+            backgroundColor: "#F8F8F8",
             flexDirection: "row",
             alignItems: "center",
             height: 49,

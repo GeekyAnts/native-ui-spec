@@ -8,6 +8,8 @@ var Text_1 = require("./Text/Text");
 var Icon_1 = require("./Icon/Icon");
 var Button_1 = require("./Button/Button");
 var Badge_1 = require("./Badge/Badge");
+var TableView_1 = require("./TableView/TableView");
+var Toolbar_1 = require("./Toolbar/Toolbar");
 var IOSSpec = /** @class */ (function () {
     function IOSSpec() {
         this.Layout = new Layout_1.Layout();
@@ -18,6 +20,8 @@ var IOSSpec = /** @class */ (function () {
         this.Icon = new Icon_1.Icon();
         this.Button = new Button_1.Button();
         this.Badge = new Badge_1.Badge();
+        this.TableView = new TableView_1.TableView();
+        this.Toolbar = new Toolbar_1.Toolbar();
     }
     return IOSSpec;
 }());

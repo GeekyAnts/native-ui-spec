@@ -1,5 +1,5 @@
-import { Header, Leading, Trailing, Title } from "../../../types/commonSpec/Header";
-export class NavigationBar implements Header {
+import { NavigationBar as INavigationBar, Leading, Trailing, Title } from "../../../types/IOSSpec/NavigationBar";
+export class NavigationBar implements INavigationBar {
 	style: Object;
 	title: Title;
 	leading: Leading;
@@ -8,7 +8,7 @@ export class NavigationBar implements Header {
 		this.style = {
 			height: 44,
 			paddingHorizontal: 8,
-			backgroundColor: "#EFEFF4",
+			backgroundColor: "#F8F8F8",
 			flexDirection: "row",
 			borderBottomWidth: 1,
 			borderBottomColor: "#CECED2",
@@ -43,6 +43,7 @@ export class NavigationBar implements Header {
 					alignItems: "center",
 					backgroundColor: "transparent",
 					flexDirection: "row",
+					paddingHorizontal: 7,
 				},
 				Text: {
 					style: {
@@ -72,6 +73,7 @@ export class NavigationBar implements Header {
 					alignItems: "center",
 					backgroundColor: "transparent",
 					flexDirection: "row",
+					paddingHorizontal: 7,
 				},
 				Text: {
 					style: {

@@ -6,6 +6,8 @@ import { Text } from "./Text/Text";
 import { Icon } from "./Icon/Icon";
 import { Button } from "./Button/Button";
 import { Badge } from "./Badge/Badge";
+import { TableView } from "./TableView/TableView";
+import { Toolbar } from "./Toolbar/Toolbar";
 
 import { IOSSpec as IIOSSpec } from "../../types/IOSSpec/index";
 import { Content } from "../../types/CommonSpec/Content";
@@ -16,6 +18,8 @@ import { Text as TextType } from "../../types/CommonSpec/Text";
 import { Icon as IconType } from "../../types/CommonSpec/Icon";
 import { Button as ButtonType } from "../../types/CommonSpec/Button";
 import { Badge as BadgeType } from "../../types/CommonSpec/Badge";
+import { TableView as TableViewType } from "../../types/IOSSpec/TableView";
+import { Toolbar as ToolbarType } from "../../types/IOSSpec/Toolbar";
 
 export class IOSSpec implements IIOSSpec {
 	Layout: Content;
@@ -26,6 +30,8 @@ export class IOSSpec implements IIOSSpec {
 	Icon: IconType;
 	Button: ButtonType;
 	Badge: BadgeType;
+	TableView: TableViewType;
+	Toolbar: ToolbarType;
 	constructor() {
 		this.Layout = new Layout();
 		this.TabBar = new TabBar();
@@ -35,5 +41,7 @@ export class IOSSpec implements IIOSSpec {
 		this.Icon = new Icon();
 		this.Button = new Button();
 		this.Badge = new Badge();
+		this.TableView = new TableView();
+		this.Toolbar = new Toolbar();
 	}
 }

@@ -63,6 +63,7 @@ export interface Button {
 		alignItems?: FlexAlignType;
 		backgroundColor?: string;
 		flexDirection?: "row" | "column" | "row-reverse" | "column-reverse";
+		paddingHorizontal?: number;
 	};
 	Icon?: Icon;
 	Text?: Text;

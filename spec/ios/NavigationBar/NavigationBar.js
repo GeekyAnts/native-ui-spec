@@ -5,7 +5,7 @@ var NavigationBar = /** @class */ (function () {
         this.style = {
             height: 44,
             paddingHorizontal: 8,
-            backgroundColor: "#EFEFF4",
+            backgroundColor: "#F8F8F8",
             flexDirection: "row",
             borderBottomWidth: 1,
             borderBottomColor: "#CECED2",
@@ -40,6 +40,7 @@ var NavigationBar = /** @class */ (function () {
                     alignItems: "center",
                     backgroundColor: "transparent",
                     flexDirection: "row",
+                    paddingHorizontal: 7,
                 },
                 Text: {
                     style: {
@@ -69,6 +70,7 @@ var NavigationBar = /** @class */ (function () {
                     alignItems: "center",
                     backgroundColor: "transparent",
                     flexDirection: "row",
+                    paddingHorizontal: 7,
                 },
                 Text: {
                     style: {
